@@ -1,0 +1,8 @@
+<h1>DADDYS</h1>
+<ul>
+<%@fathers.each do |dad|%>
+    <li><%= link_to dad.name, dad%>
+    <br>
+    <%=dad.joke%></li>
+<%end%>
+</ul>

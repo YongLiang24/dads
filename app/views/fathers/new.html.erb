@@ -1,0 +1,9 @@
+<h1>Make that dad!</h1>
+<%=form_for @father do |f| %>
+    <%=f.label :name%>
+    <%=f.text_field :name%>
+    <%=f.label :joke%>
+    <%=f.text_area :joke%>
+    <%=f.collection_check_boxes :grill_ids, Grill.all, :id, :brand%>
+    <%=f.submit%>
+<%end%>

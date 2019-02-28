@@ -1,0 +1,8 @@
+<h1>GRILLZ</h1>
+<ul>
+<%@grills.each do |grill|%>
+    <li><%= link_to grill.brand, grill%>
+    <br>
+    <%=grill.num_of_burners%></li>
+<%end%>
+</ul>

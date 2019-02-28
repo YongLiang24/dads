@@ -1,0 +1,2 @@
+class BackyardBbqsController < ApplicationController
+end
